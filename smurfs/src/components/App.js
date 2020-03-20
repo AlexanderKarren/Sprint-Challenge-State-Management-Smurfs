@@ -6,6 +6,10 @@ import SmurfList from './SmurfList'
 import "./App.css";
 
 class App extends Component {
+  componentDidMount() {
+    this.props.getData();
+  }
+
   render() {
     return (
       <div className="App">
